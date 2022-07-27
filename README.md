@@ -30,8 +30,9 @@ tag: 해당 사이트의 기사 제목의 태그를 입력
 attr: 태그를 특정하기 위한 속성(attributes) 입력
 
 ---
-/src/sql/db.rs 파일에 database에 접근하기 위한 정보를 저장
+database에 접근하기 위한 정보 저장  
 
+/src/sql/db.rs
 ```
 pub const DB_USER:&'static str = "username";
 pub const DB_PASSWORD:&'static str = "password";
