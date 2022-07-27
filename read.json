@@ -1,0 +1,22 @@
+[
+    {
+        "url": "https://news.hada.io/new",
+        "tag": "a",
+        "attr": ["rel", "nofollow"]
+    },
+    {
+        "url": "https://news.ycombinator.com/",
+        "tag": "a",
+        "attr": ["class", "titlelink"]
+    },
+    {
+        "url": "https://www.theguardian.com/technology/all",
+        "tag": "a",
+        "attr": ["class", "js-headline-text"]
+    },
+    {
+        "url": "https://www.theverge.com/tech",
+        "tag": "a",
+        "attr": ["data-analytics-link", "article"]
+    }
+]
