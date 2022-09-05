@@ -83,10 +83,6 @@ async fn get_news() -> Vec<News> {
         for (_j, link) in soup.tag(f.tag).attr(f.attr.0, f.attr.1).find_all().enumerate() {
             let title = link.text();
 
-            if sql::check_in_sql(&title) == 1 {
-                continue;
-            }
-
             let mut href = link.get("href").expect("Couldn't find link with 'href' attribute");
 
             if check_blacklist(&title, &href) {

@@ -54,7 +54,7 @@ pub fn insert_to_sql(title: &str, href: &str) {
     let mut conn = set_conn();
 
     conn.exec_drop(
-        "INSERT INTO news (title, href) VALUES (:title, :href)",
+        "INSERT IGNORE INTO news (title, href) VALUES (:title, :href)",
         params! {
             "title" => title,
             "href" => href,
